@@ -1,0 +1,18 @@
+/* Header */
+.header-card-content button {
+  width: 210px;
+}
+
+/* Our Menu Section */
+.our-menu-row {
+  row-gap: 15px;
+}
+
+.our-menu-card-nav-row button {
+  padding: 14px 20px;
+}
+
+/* Advantages Section */
+.advantages-content-card img:nth-child(2) {
+  left: 37.5%;
+}

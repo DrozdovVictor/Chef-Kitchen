@@ -1,0 +1,268 @@
+@media (max-width: 1250px) {
+  /* Header */
+  .header-nav .item:nth-child(2) .element:first-child {
+    display: none;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  footer .container .item:first-child > img {
+    width: 180px;
+    height: 60px;
+  }
+
+  footer .container .item:first-child p {
+    display: none;
+  }
+}
+ 
+@media (min-width: 650px) and (max-width: 1250px) {
+  /* Footer */
+  footer .container .item:last-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-back {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  /* Footer */
+  footer {
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 1010px) {
+  /* Footer */ 
+  footer > img:nth-child(2), footer > img:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Header */
+  .header-nav .item:first-child {
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 915px) {
+  /* Footer */
+  footer {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Header */
+  .header-nav .item:nth-child(2) {
+    column-gap: 25px;
+  }
+
+  .header-nav .item:nth-child(2) button {
+    padding: 5px;
+  }
+
+  .header-nav .item:nth-child(2) button span {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  /* Header */
+  .header-content p:last-child {
+    position: static;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 15px;
+  }
+
+  footer > img {
+    display: none;
+  }
+
+  footer .container {
+    row-gap: 50px;
+  }
+
+  footer .container .item:last-child {
+    flex-direction: row;
+    column-gap: 25px;
+  }
+}
+
+@media (min-width: 670px) and (max-width: 800px) {
+  /* Header */
+  .header-card-heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* Header */
+  .header-nav .item:first-child a {
+    display: none;
+  }
+
+  .header-card {
+    padding: 30px 0px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  h5, h6, p,  p, ul, ul li, a, span {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .container .item:last-child {
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+  }
+
+  footer .container .item:first-child {
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  footer .container .item .row {
+    column-gap: 15px;
+  }
+
+  footer .container .item:nth-child(3) .block {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  /* Header */
+  .header-nav .item:first-child img {
+    width: 150px;
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .header-card img:nth-child(2) {
+    right: 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Header */
+  .eader-card-heading {
+    width: 100%;
+    justify-content: center;
+    padding: 0px 25px;
+  }
+
+  .header-card-heading h1 {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  h5, h6, p, ul, ul li, a, span {
+    font-size: 12px;
+  }
+
+  /* Header */
+  .header-card-heading h1 {
+    text-align: center;
+    line-height: 35px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .header-content h6 {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Header */
+  .header-nav .item:nth-child(2) {
+    column-gap: 15px;
+  }
+
+  .header-nav .item:first-child img {
+    width: 115px;
+    height: 40px;
+  }
+
+  .header-card-heading h1 {
+    max-width: 130px;
+  }
+
+  /* Footer */
+  footer .container {
+    row-gap: 30px;
+  }
+
+  footer .container .item:first-child {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Footer */
+  footer .container .item:nth-child(2){
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  footer .container .item:nth-child(2) .block:first-child {
+    align-items: center;
+  }
+}
+
+.header-nav .item:last-child .element p {
+  font-size: 16px;
+}
+
+@media (max-width: 270px) {
+  /* Header */
+  .header-nav .item:first-child img {
+    width: 100px;
+    height: 35px;
+  }
+}
