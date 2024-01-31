@@ -66,6 +66,10 @@ button:hover {
  cursor: pointer;
 }
 
+p:hover {
+  cursor: default;
+}
+
 .container {
   padding: 0px 20px;
   max-width: 1260px;
@@ -453,6 +457,74 @@ header {
   background-color: transparent;
   color: #fff;
   font-size: 20px;
+  position: relative;
+  transition: .3s;
+}
+
+.our-menu-card-nav-slider button:hover {
+  cursor: pointer;
+  border: 2px solid var(--yellow);
+  transition: .3s;
+}
+
+.our-menu-card-nav-slider button:hover:before, .our-menu-card-nav-slider button:hover:after, .our-menu-card-nav-slider button:hover span {
+  background-color: var(--yellow);
+  transition: .3s;
+}
+
+.our-menu-card-nav-slider .btn-prev:before, .our-menu-card-nav-slider .btn-prev:after, .our-menu-card-nav-slider .btn-next:before, .our-menu-card-nav-slider .btn-next:after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 25px;
+  top: 12px;
+  transition: .3s;
+}
+
+.our-menu-card-nav-slider .btn-prev:before, .our-menu-card-nav-slider .btn-prev:after {
+  left: 5px;
+}
+
+.our-menu-card-nav-slider .btn-next:before, .our-menu-card-nav-slider .btn-next:after {
+  right: 5px;
+}
+
+.our-menu-card-nav-slider .btn-prev:before {
+  transform: rotate(-45deg);
+}
+
+.our-menu-card-nav-slider .btn-next:before {
+  transform: rotate(45deg);
+}
+
+.our-menu-card-nav-slider .btn-prev:after {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.our-menu-card-nav-slider .btn-next:after {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+.our-menu-card-nav-slider > .btn-prev span, .our-menu-card-nav-slider > .btn-next span {
+  width: 17px;
+  background-color: #fff;
+  border-radius: 25px;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: .3s;
+}
+
+.our-menu-card-nav-slider > .btn-prev span {
+  left: 8px;
+}
+
+.our-menu-card-nav-slider > .btn-next span {
+  right: 8px;
 }
 
 .our-menu-card-nav-slider .content {
@@ -486,6 +558,10 @@ header {
   width: 100%;
   margin: 17px 0px 8px;
   position: relative;
+}
+
+.our-menu-card-slider button {
+  cursor: pointer;
 }
 
 .our-menu-card-slider:before, .our-menu-card-slider:after {
@@ -535,13 +611,76 @@ header {
   justify-content: center;
   align-items: center;
   transition: .3s;
+  position: relative;
+  transition: .3s;
 }
 
 .our-menu-card-slider .btn-prev:hover .block, .our-menu-card-slider .btn-next:hover .block {
   border: 2px solid var(--yellow);
-  color: var(--yellow);
-  cursor: pointer;
   transition: .3s;
+  cursor: pointer;
+}
+
+.our-menu-card-slider .btn-prev .block:before, .our-menu-card-slider .btn-prev .block:after, .our-menu-card-slider .btn-next .block:before, .our-menu-card-slider .btn-next .block:after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 2px;
+  background-color: var(--lightgreen);
+  border-radius: 25px;
+  transform: .3s;
+  top: 22px;
+  transition: .3s;
+}
+
+.our-menu-card-slider .btn-prev .block:before, .our-menu-card-slider .btn-prev .block:after {
+  left: 12px;
+}
+
+.our-menu-card-slider .btn-next .block:before, .our-menu-card-slider .btn-next .block:after {
+  right: 12px;
+}
+
+.our-menu-card-slider .btn-prev .block:before {
+  transform: rotate(-45deg);
+}
+
+.our-menu-card-slider .btn-prev .block:after {
+  transform: rotate(45deg);
+  top: 34px;
+}
+
+.our-menu-card-slider .btn-next .block:before {
+  transform: rotate(45deg);
+}
+
+.our-menu-card-slider .btn-next .block:after {
+  transform: rotate(-45deg);
+  top: 34px;
+}
+
+.our-menu-card-slider .btn-prev .block span, .our-menu-card-slider .btn-next .block span {
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  background-color: var(--lightgreen);
+  border-radius: 25px;
+  top: 28.5px;
+  transition: .3s;
+}
+
+.our-menu-card-slider .btn-prev .block span {
+  left: 14px;
+}
+
+.our-menu-card-slider .btn-next .block span {
+  right: 14px;
+}
+
+.our-menu-card-slider .btn-prev:hover .block:before, .our-menu-card-slider .btn-prev:hover .block:after, .our-menu-card-slider .btn-next:hover  .block:before, .our-menu-card-slider .btn-next:hover .block:after, .our-menu-card-slider .btn-prev:hover .block span, .our-menu-card-slider .btn-next:hover .block span {
+  background-color: var(--yellow);
+  transition: .3s;
+  cursor: pointer;
 }
 
 .our-menu-card-slider-content {
